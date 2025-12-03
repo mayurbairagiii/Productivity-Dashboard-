@@ -1,0 +1,533 @@
+
+:root {
+  --pri: #051d38;
+  --sec: #174a84;
+  --tri: #1d546c;
+  --tri2: #000000;
+  --wh: #ffffff;
+}
+
+@font-face {
+  font-family: one;
+  src: url(Helvetica_NTUXwLmxSC.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: one;
+  color: var(--wh);
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--pri);
+}
+
+header {
+  padding: 20px;
+
+}
+
+.nav {
+  height: 38vh;
+  background-color: var(--sec);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-image: url(https://images.unsplash.com/photo-1514477917009-389c76a86b68?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHNreXxlbnwwfHwwfHx8MA%3D%3D);
+  background-size: cover;
+}
+
+.nav .nav1 h1 {
+  font-size: 5em;
+}
+
+.nav .nav1 h2 {
+  font-size: 4em;
+}
+
+.nav1 h3 {
+  font-size: 3em;
+  margin-bottom: 30px;
+}
+
+.nav .nav2 h2 {
+  font-size: 4em;
+}
+
+.nav .nav2 h3 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.nav .nav2 h3 {
+  font-size: 2em;
+}
+.nav .nav2 h3 {
+  font-size: 2em;
+}
+
+
+.card-containers {
+  display: flex;
+  padding: 20px;
+  gap: 40px;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 100%;  
+}
+
+.card {
+  height: 45vh;
+  width: 17vw;
+  background-color: #ffffff;
+  border-radius: 10px;
+  font-size: 22px;
+  overflow: hidden;
+  position: relative;
+  transition: all ease 0.1s;
+  flex-shrink: 0;  
+}
+
+.card img {
+  height: 100%;
+  width: 100%;
+}
+
+.card h2 {
+  position: absolute;
+  bottom: 2%;
+  right: 5%;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  color: var(--wh);
+}
+
+.card:active {
+  scale: 0.95;
+}
+
+.full-page-cards {
+  height: 100%;
+  width: 100%;
+}
+
+.full-card {
+  height: 100%;
+  width: 100%;
+  background-color: var(--pri);
+  display: none;
+  position: absolute;
+  top: 0;  
+  left: 0;  
+  
+}
+
+.left-side {
+  height: 100%;
+  width: 30%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 60px;
+}
+
+.left-side h2 {
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.left-side form {
+  gap: 20px;
+  height: 75%;
+  width: 100%;
+  background-color: var(--sec);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px 0px 0px 25px;
+  border-radius: 5px;
+  overflow-y: auto;  
+}
+
+.left-side form input {
+  width: 90%;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  font-size: 22px;
+  background-color: var(--pri);
+  color: var(--wh);
+}
+
+.left-side form textarea {
+  width: 93%;
+  padding: 10px 0px 200px 0px;
+  border-radius: 5px;
+  border: none;
+  font-size: 22px;
+  background-color: var(--pri);
+  color: var(--wh);
+}
+
+.left-side form button {
+  width: 93%;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  font-size: 25px;
+  background-color: var(--wh);
+  color: var(--tri2);
+  font-weight: 700;
+}
+
+.for-flexing {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;  
+}
+
+.right-side {
+  height: 76%;
+  width: 60%;
+  background-color: var(--sec);
+  padding: 30px 20px 0px 20px;
+  border-radius: 5px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto; 
+}
+
+.heretask {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--pri);
+  padding: 10px 20px;
+  align-items: center;
+  border-radius: 10px;
+  gap: 20px;
+}
+
+.heretask h2 span {
+  color: var(--wh);
+  font-size: 15px;
+  background-color: red;
+  padding: 3px 8px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.heretask button {
+  padding: 10px 35px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  background-color: rgb(25, 161, 25);
+}
+
+.addtasks button:active {
+  scale: 0.95;
+}
+
+.close-btn {
+  position: absolute;
+  right: 1.5%;
+  top: 3%;
+  padding: 12px 35px;
+  border-radius: 5px;
+  font-size: 25px;
+  color: var(--wh);
+  font-weight: 700;
+  border: none;
+  background-color: rgb(193, 35, 35);
+  transition: all ease 0.1s;
+}
+
+.close-btn:active {
+  scale: 0.8;
+}
+
+.task-marks {
+  display: flex;
+  padding: 20px 0px 10px 0px;
+  width: 30%;
+  scale: 1.9;
+  margin-bottom: 50px;
+}
+
+/* DAILY PLANNER */
+
+.full-daily-planner {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.daily-planner {
+  padding: 25px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.daily-planner h2 {
+  margin-top: 10px;
+}
+
+.day-planner {
+  background-color: var(--sec);
+  height: 80%;
+  width: 95%;
+  margin: 30px 0px 10px 28px;
+  border-radius: 8px;
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  overflow: hidden;
+  gap: 20px;
+}
+
+.day-planner-time {
+  width: 48%;
+  display: flex;
+  padding: 12px;
+  height: 70px;
+  position: relative;
+  background-color: var(--pri);
+  border-radius: 8px;
+}
+
+.day-planner-time input {
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--pri);
+  color: var(--wh);
+  font-size: 30px;
+  padding: 18px 0px 0px 44px;
+  outline: none;
+}
+
+.day-planner-time p {
+  position: absolute;
+  top: 10%;
+  left: 1%;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.motivation-container {
+  padding: 20px;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.motivation-card {
+  height: 500px;
+  width: 650px;
+  border-radius: 50px;
+  background-color: var(--sec);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.motivation-card::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: var(--sec);
+  scale: 1.2;
+  z-index: 8;
+  filter: blur(150px);
+}
+
+.moti-wrapper {
+  height: 100%;
+  width: 100%;
+  background-color: var(--pri);
+  position: absolute;
+  z-index: 10;
+  border-radius: 50px;
+  padding: 25px;
+}
+
+.motivation1 {
+  background-color: var(--sec);
+  padding: 15px 30px;
+  border-radius: 15px;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.motivation2 {
+  padding: 20px;
+}
+
+
+.motivation2 h2{
+  font-size: 30px;
+} 
+
+.motivation3 h2{
+  position: absolute;
+  font-size: 40px;
+  bottom: 5%;
+  right: 5%;
+} 
+
+.motivation-card img {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+
+.motivation-container img {
+  position: absolute;
+  z-index: 11;
+  opacity: .6;
+}
+
+.pomo-timer-container {
+  padding: 30px;
+}
+
+.pomo-timer-container h1 {
+  font-size: 50px;
+}
+
+.pomo-card {
+  background-color: var(--pri);
+}
+
+.for-pomo-flexing h2 {
+  font-size: 180px;
+}
+
+.pomo-card button {
+  padding: 10px 30px;
+  margin: 20px;
+  border: none;
+  background-color: var(--sec);
+  font-size: 20px;
+  color: var(--wh);
+  font-weight: 700;
+  border-radius: 8px;
+  box-shadow: 0px 3px 5px #000000;
+  text-transform: capitalize;
+  transition: all ease 0.3;
+}
+
+.for-pomo-flexing {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.pomo-card button:active {
+  box-shadow: 0px 0px 0px black;
+}
+
+.break-card {
+  background-color: rgb(13, 158, 81);
+  position: absolute;
+  top: 26%;
+  left: 50%;
+  transform: translate(-50%,0%);
+  padding: 15px 45px;
+  border-radius: 10px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.daily-goals {
+  padding: 30px;
+}
+
+.daily-goals h2 {
+  font-size: 40px;
+}
+
+.card-daily-goals {
+  height: 300px;
+  width: 700px;
+  background-color: var(--wh);
+  border-radius: 10px;
+}
+
+.content-daily-goals {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.formdaily input {
+  padding: 15px 200px;
+  background-color: var(--sec);
+  border: none;
+  border-radius: 10px;
+  font-size: 30px;
+  color: var(--wh);
+}
+
+.card-daily-goals {
+  color: black;
+  padding: 30px 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-daily-goals h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.AddGoal {
+  padding: 20px 40px;
+  background-color: rgb(26, 215, 105);
+  font-size: 30px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+}
+.RemoveGoal {
+  padding: 20px 40px;
+  background-color: rgb(26, 215, 105);
+  font-size: 30px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  display: none;
+}
+
+
+
